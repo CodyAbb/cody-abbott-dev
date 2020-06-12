@@ -21,14 +21,21 @@
   list-style-type: none;
 }
 
+.avatarcard:hover {
+  background-color: #a3d9ff;
+  color: black;
+}
+
 .avatartext {
   text-decoration-style: none;
+  color: black;
+  margin-left: 0.3em;
 }
 
 .navlink {
   display: block;
   color: black;
-  padding: 1em 0 1em 0;
+  padding: 2em 0 2em 0;
   text-align: center;
   text-decoration: none;
 }
