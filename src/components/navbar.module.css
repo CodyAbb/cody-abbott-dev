@@ -35,6 +35,7 @@
 .navlink {
   display: block;
   color: black;
+  margin: 0.5em 0 0.5em 0;
   padding: 2em 0 2em 0;
   text-align: center;
   text-decoration: none;
