@@ -1,0 +1,24 @@
+.verticalnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 2em 0 0 0;
+  width: 25%;
+  background-color: #f2e94e;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.navlink {
+  display: block;
+  color: black;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Links on mouse-over */
+.navlink:hover {
+  background-color: #a3d9ff;
+  color: black;
+}
