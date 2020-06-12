@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<nav
+  className="verticalnav"
+>
+  <a
+    className="avatarcard"
+    href="/"
+  >
+    <div
+      className="avatar gatsby-image-wrapper"
+      style={
+        Object {
+          "display": "inline-block",
+          "height": 125,
+          "overflow": "hidden",
+          "position": "relative",
+          "width": 125,
+        }
+      }
+    >
+      <img
+        alt=""
+        aria-hidden={true}
+        src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/aAAwDAQACEAMQAAABzavPhX2KsJ7gewnP/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAAxEhM//aAAgBAQABBQKz04ENxSOZpjYxo7K9LhjP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/Aciv/8QAFhEBAQEAAAAAAAAAAAAAAAAAEAER/9oACAECAQE/AcKf/8QAHBABAAICAwEAAAAAAAAAAAAAAQARAiEQMUFR/9oACAEBAAY/ApkYen2UVwVctNxIiup3P//EAB4QAAMAAgEFAAAAAAAAAAAAAAABESExQVFhcYHh/9oACAEBAAE/IX9IidKrkN7R3o12aKc5EppRnAmVr4NHLRUl8nwf/9oADAMBAAIAAwAAABBL+D7/xAAYEQACAwAAAAAAAAAAAAAAAAAAMQEQEf/aAAgBAwEBPxDXSjSf/8QAFxEBAQEBAAAAAAAAAAAAAAAAABFBAf/aAAgBAgEBPxDC8bV//8QAHhABAAICAwADAAAAAAAAAAAAARExACFBUXFhgcH/2gAIAQEAAT8Q1JCQSVp3vGYgkR0M7w2mAi4448xNmHcV3f3kpCJq76MipBBwb/c3JIViD5Y+kXQKxj2ICnfmf//Z"
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "objectFit": "cover",
+            "objectPosition": "center",
+            "opacity": 1,
+            "position": "absolute",
+            "top": 0,
+            "transitionDelay": "500ms",
+            "width": "100%",
+          }
+        }
+      />
+      <picture>
+        <source
+          srcSet="/static/3ede9b91227891490f9ae0fdf9ba25db/bac10/facebook_profile_pic.jpg 1x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/1b59b/facebook_profile_pic.jpg 1.5x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/034c8/facebook_profile_pic.jpg 2x"
+        />
+        <img
+          alt=""
+          height={125}
+          loading="lazy"
+          onLoad={[Function]}
+          src="/static/3ede9b91227891490f9ae0fdf9ba25db/bac10/facebook_profile_pic.jpg"
+          srcSet="/static/3ede9b91227891490f9ae0fdf9ba25db/bac10/facebook_profile_pic.jpg 1x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/1b59b/facebook_profile_pic.jpg 1.5x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/034c8/facebook_profile_pic.jpg 2x"
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 500ms",
+              "width": "100%",
+            }
+          }
+          width={125}
+        />
+      </picture>
+      <noscript
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<picture><source srcset=\\"/static/3ede9b91227891490f9ae0fdf9ba25db/bac10/facebook_profile_pic.jpg 1x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/1b59b/facebook_profile_pic.jpg 1.5x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/034c8/facebook_profile_pic.jpg 2x\\" /><img loading=\\"lazy\\" width=\\"125\\" height=\\"125\\" srcset=\\"/static/3ede9b91227891490f9ae0fdf9ba25db/bac10/facebook_profile_pic.jpg 1x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/1b59b/facebook_profile_pic.jpg 1.5x,
+/static/3ede9b91227891490f9ae0fdf9ba25db/034c8/facebook_profile_pic.jpg 2x\\" src=\\"/static/3ede9b91227891490f9ae0fdf9ba25db/bac10/facebook_profile_pic.jpg\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+          }
+        }
+      />
+    </div>
+    <p
+      className="avatartext"
+    >
+      Cody Abbott
+      <br />
+      Software Developer
+    </p>
+  </a>
+  <a
+    className="navlink"
+    href="/posts/"
+  >
+    <p>
+      Posts/Tutorials
+    </p>
+  </a>
+  <a
+    className="navlink"
+    href="/projects/"
+  >
+    <p>
+      Projects
+    </p>
+  </a>
+</nav>
+`;
