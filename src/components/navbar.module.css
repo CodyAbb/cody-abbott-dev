@@ -3,10 +3,26 @@
   margin: 0;
   padding: 2em 0 0 0;
   width: 25%;
-  background-color: #f2e94e;
+  background-color: #f3de8a;
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatarcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.avatartext {
+  text-decoration-style: none;
 }
 
 .navlink {
