@@ -27,7 +27,12 @@
     "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.9",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "prettier": "2.0.5",
+    "react-test-renderer": "^16.13.1"
   },
   "repository": {
     "type": "git",
