@@ -9,8 +9,8 @@ jobs:
     steps:
       - checkout
       - heroku/install
-      - run:
-          command: ~/cody-abbott-dev && npm test
+      # - run:
+      #     command: ~/cody-abbott-dev && npm test
       - heroku/deploy-via-git
 
 workflows:
