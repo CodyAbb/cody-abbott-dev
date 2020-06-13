@@ -10,7 +10,7 @@ jobs:
       - heroku/install
       - run:
           name: Run Tests
-          command: npm test
+          command: npm run test
       - heroku/deploy-via-git
 
 workflows:
