@@ -1,26 +1,22 @@
 version: 2.1
 
 orbs:
-  heroku: circleci/heroku@1.0.1 # Invoke the Heroku orb
-
-workflows:
-  heroku_deploy:
-    jobs:
-      - build
-      - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+  heroku: circleci/heroku@0.0.10
 
 jobs:
-  build:
-    working_directory: ~/cody-abbott-dev
+  deploy:
     executor: heroku/default
     steps:
       - checkout
       - heroku/install
       - run:
-          name: run tests
-          command: npm run test
+          command: ~/cody-abbott-dev && npm test
+      - heroku/deploy-via-git
+
+workflows:
+  heroku_deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
