@@ -9,7 +9,10 @@ module.exports = {
   plugins: [
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    // Transforms markdown files
     "gatsby-transformer-remark",
+    //Plugin allows access to files stored in data
+    // used for images and article markdown folder
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/` } },
     {
       resolve: `gatsby-plugin-typography`,

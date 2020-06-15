@@ -11,7 +11,7 @@ export default function Projects({ data }) {
         <main>
           <h2>Here are the projects I completed at CodeClan</h2>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <ArticleCard node={node} />
+            <ArticleCard key={node.id} node={node} />
           ))}
         </main>
       </ContentContainer>
@@ -29,6 +29,9 @@ export const query = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+          }
+          fields {
+            slug
           }
         }
       }
