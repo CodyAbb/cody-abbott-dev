@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { IconContext } from "react-icons"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import Img from "gatsby-image"
 import style from "./navbar.module.css"
@@ -28,12 +29,20 @@ export const PureNavbar = ({ data, children }) => (
       <Link to="/projects/" className={style.navlink}>
         <p>Projects</p>
       </Link>
-      <a href="https://www.linkedin.com/in/cody-abbott/">
-        <FaLinkedin />
-      </a>
-      <a href="https://github.com/CodyAbb">
-        <FaGithub />
-      </a>
+      <div className={style.socialicons}>
+        <IconContext.Provider value={{ color: "black", size: "3em" }}>
+          <a
+            className={style.linkedin}
+            href="https://www.linkedin.com/in/cody-abbott/"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a classname={style.github} href="https://github.com/CodyAbb">
+            <FaGithub />
+          </a>
+        </IconContext.Provider>
+      </div>
     </nav>
     {children}
   </>

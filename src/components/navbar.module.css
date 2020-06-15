@@ -46,3 +46,18 @@
   background-color: #a3d9ff;
   color: black;
 }
+
+.socialicons {
+  position: absolute;
+  bottom: 3em;
+  left: 35%;
+  margin-right: -15%;
+}
+
+.linkedin {
+  padding-right: 1em;
+}
+
+.github {
+  padding-right: 1em;
+}
