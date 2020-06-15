@@ -27,9 +27,8 @@ export default function Home() {
             technologies I struggled grasping at first. I will try and convey
             them from my junior point of view, hoping this will help others just
             starting out. I've watched my fair share of tutorials and said
-            "thank christ" when I've googled something and seen a Medium
-            article. So in my eyes its always good to give back. In fact I've
-            made the{" "}
+            "thank christ" when I've googled something and seen a Medium article
+            so in my eyes it is always good to give back. In fact I've made the{" "}
             <a href="https://github.com/CodyAbb/cody-abbott-dev">repo</a> I
             created this site with public so you can explore my thought process.
           </p>

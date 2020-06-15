@@ -34,10 +34,14 @@ module.exports = {
         icon: "src/data/img/icons8-console-30.png", // This path is relative to the root of the site.
       },
     },
+    //This plugin automatically generates a service worker for building apps offline
+    //helps make it a progressive web app
+    `gatsby-plugin-offline`,
   ],
   // Site meta-data
   siteMetadata: {
     title: "My Site",
+    description: "Web development portfolio and tutorial site",
     author: "Cody Abbott",
     siteUrl: "https://cody-abbott-dev.herokuapp.com/",
     social: [
