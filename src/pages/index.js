@@ -29,8 +29,9 @@ export default function Home() {
             starting out. I've watched my fair share of tutorials and said
             "thank christ" when I've googled something and seen a Medium
             article. So in my eyes its always good to give back. In fact I've
-            made the repo I created this site public and you can find it{" "}
-            <a href="https://github.com/CodyAbb/cody-abbott-dev">here</a>.
+            made the{" "}
+            <a href="https://github.com/CodyAbb/cody-abbott-dev">repo</a> I
+            created this site with public so you can explore my thought process.
           </p>
           <p>
             Anyway, thanks for visiting and check back to see how I change and

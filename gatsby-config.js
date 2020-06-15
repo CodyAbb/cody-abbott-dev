@@ -20,6 +20,20 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `CodyAbbottDev`,
+        short_name: `CodyAbbottDev`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: "src/data/img/icons8-console-30.png", // This path is relative to the root of the site.
+      },
+    },
   ],
   // Site meta-data
   siteMetadata: {
