@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
@@ -10,6 +10,9 @@ export default function BlogPost({ data }) {
       <ContentContainer>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div>
+          <Link to="/projects/">&#8592; Back</Link>
+        </div>
       </ContentContainer>
     </Navbar>
   )
