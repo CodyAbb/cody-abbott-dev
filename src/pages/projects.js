@@ -1,13 +1,37 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
+import { graphql } from "gatsby"
+import ArticleCard from "../components/articleCard"
 
-export default function Projects() {
+export default function Projects({ data }) {
   return (
     <Navbar>
       <ContentContainer>
-        <main>Here are the projects I completed at CodeClan</main>
+        <main>
+          <h2>Here are the projects I completed at CodeClan</h2>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <ArticleCard node={node} />
+          ))}
+        </main>
       </ContentContainer>
     </Navbar>
   )
 }
+
+export const query = graphql`
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`

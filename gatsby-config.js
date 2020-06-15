@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-remark",
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/` } },
     {
       resolve: `gatsby-plugin-typography`,
