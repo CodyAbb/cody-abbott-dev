@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 import Img from "gatsby-image"
 import style from "./navbar.module.css"
 
@@ -27,6 +28,12 @@ export const PureNavbar = ({ data, children }) => (
       <Link to="/projects/" className={style.navlink}>
         <p>Projects</p>
       </Link>
+      <a href="https://www.linkedin.com/in/cody-abbott/">
+        <FaLinkedin />
+      </a>
+      <a href="https://github.com/CodyAbb">
+        <FaGithub />
+      </a>
     </nav>
     {children}
   </>
