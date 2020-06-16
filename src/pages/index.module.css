@@ -1,0 +1,25 @@
+.banner {
+  /* height: 80%; */
+  background-color: #f3de8a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 0.5em;
+}
+
+.herotext {
+  padding: 1em;
+  font-size: 7em;
+  color: white;
+}
+
+.heroimage {
+}
+
+article {
+  padding: 1em 2em 1em 2em;
+}
+
+article > p {
+  font-size: 1.2em;
+}
