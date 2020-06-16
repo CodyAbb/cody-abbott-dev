@@ -2,15 +2,21 @@ import React from "react"
 import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import styles from "./index.module.css"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Navbar>
         <ContentContainer>
           <header className={styles.banner}>
             <h1 className={styles.herotext}>Hello World!</h1>
-            <h1 className={styles.heroimage}>Placeholder for image here</h1>
+            <Img
+              className={styles.heroimage}
+              fixed={data.file.childImageSharp.fixed}
+              alt="Code placeholder"
+            />
           </header>
           <article>
             <p>
@@ -49,3 +55,15 @@ export default function Home() {
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "img/Screenshot_triplet_checker.png" }) {
+      childImageSharp {
+        fixed(width: 300, height: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

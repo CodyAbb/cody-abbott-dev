@@ -7,6 +7,7 @@
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  font-size: 1.2em;
 }
 
 .avatar {
