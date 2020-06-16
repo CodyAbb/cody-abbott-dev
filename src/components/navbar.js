@@ -15,7 +15,7 @@ export const PureNavbar = ({ data, children }) => (
         <Img
           className={style.avatar}
           fixed={data.file.childImageSharp.fixed}
-          alt=""
+          alt="A picture of my mug on holiday"
         />
         <p className={style.avatartext}>
           Cody Abbott
