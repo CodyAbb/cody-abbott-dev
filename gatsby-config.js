@@ -13,10 +13,13 @@ module.exports = {
     "gatsby-transformer-remark",
     //Plugin allows access to files stored in data
     // used for images and article markdown folder
-    { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/` } },
     {
       resolve: `gatsby-source-filesystem`,
-      options: { path: `./src/data/img` },
+      options: { path: `${__dirname}/src/project_posts` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { path: `${__dirname}/src/img` },
     },
     {
       resolve: `gatsby-plugin-typography`,
@@ -35,7 +38,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: "src/data/img/icons8-console-30.png", // This path is relative to the root of the site.
+        icon: "src/img/icons8-console-30.png", // This path is relative to the root of the site.
       },
     },
     //This plugin automatically generates a service worker for building apps offline

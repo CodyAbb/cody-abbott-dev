@@ -52,7 +52,7 @@ const Navbar = ({ props, children }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        file(relativePath: { eq: "img/facebook_profile_pic.jpg" }) {
+        file(relativePath: { eq: "facebook_profile_pic.jpg" }) {
           childImageSharp {
             fixed(width: 125, height: 125) {
               ...GatsbyImageSharpFixed
