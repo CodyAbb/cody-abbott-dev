@@ -15,6 +15,10 @@ module.exports = {
     // used for images and article markdown folder
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/` } },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: { path: `./src/data/img` },
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,

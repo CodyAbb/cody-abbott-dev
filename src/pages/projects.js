@@ -24,14 +24,14 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
-          id
-          excerpt
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-          }
           fields {
             slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            lang
+            title
+            featuredImage
           }
         }
       }
