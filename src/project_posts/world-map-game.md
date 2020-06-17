@@ -1,8 +1,8 @@
 ---
 title: "World Map Game"
 date: "2020-06-17"
-featuredImage: ../img/spending_tacker_thumbnail.png
 lang: "Javascript"
+featuredImage: ../img/spending_tracker_thumbnail.png
 ---
 
 This project tasked us with designing an interactive learning game for children. So we created an interactive map in which the user could select every country and find out some basic information about it.
