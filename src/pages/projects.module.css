@@ -9,7 +9,14 @@
   background-color: #a3d9ff;
 }
 
+.cardgrid {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card {
+  justify-self: center;
   width: 25%;
   /* height: 35%; */
   /* Add shadows to create the "card" effect */
@@ -25,5 +32,7 @@
 
 /* Add some padding inside the card container */
 .cardtextcontainer {
+  background-color: #a3d9ff;
   padding: 2px 16px;
+  text-decoration: none;
 }

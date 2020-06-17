@@ -10,10 +10,12 @@ export default function Projects({ data }) {
     <Navbar>
       <ContentContainer>
         <main className={style.container}>
-          <h2 className={style.title}>Projects, CodeClan and beyond...</h2>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <ArticleCard key={node.id} node={node} />
-          ))}
+          <h2 className={style.title}>Projects: CodeClan and beyond...</h2>
+          <div className={style.cardgrid}>
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <ArticleCard key={node.id} node={node} />
+            ))}
+          </div>
         </main>
       </ContentContainer>
     </Navbar>
