@@ -2,8 +2,11 @@
 title: "World Map Game"
 date: "2020-06-17"
 lang: "Javascript"
-featuredImage: ../img/spending_tracker_thumbnail.png
+featuredImage: ../img/world_game_thumbnail.png
 ---
+
+##Repository: https://github.com/CodyAbb/world_quiz_group_project
+##Hosted at: https://codyabb.github.io/world_quiz_group_project/
 
 This project tasked us with designing an interactive learning game for children. So we created an interactive map in which the user could select every country and find out some basic information about it.
 
