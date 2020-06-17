@@ -1,0 +1,15 @@
+article {
+  padding: 2em 4em 1em 4em;
+}
+
+.blogtext {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.title {
+  width: 50%;
+  margin: 1em;
+  padding: 1.5em;
+  background-color: #a3d9ff;
+}

@@ -2,17 +2,23 @@ import React from "react"
 import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import { graphql, Link } from "gatsby"
+import style from "./blog_post.module.css"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
     <Navbar>
       <ContentContainer>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <div>
-          <Link to="/projects/">&#8592; Back</Link>
-        </div>
+        <article>
+          <h1 className={style.title}>{post.frontmatter.title}</h1>
+          <div
+            className={style.blogtext}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+          <div>
+            <Link to="/projects/">&#8592; Back</Link>
+          </div>
+        </article>
       </ContentContainer>
     </Navbar>
   )
