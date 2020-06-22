@@ -7,7 +7,7 @@ export default function ArticleCard({ node }) {
   let featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid
 
   return (
-    <Link to={node.fields.slug} className={style.card}>
+    <Link to={`/projects${node.fields.slug}`} className={style.card}>
       <Img
         fluid={featuredImgFluid}
         alt="screnshot for spending tracker app"

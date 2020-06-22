@@ -24,7 +24,9 @@ export default function Projects({ data }) {
 
 export const query = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/project_posts/.*\\\\.md$/" } }
+    ) {
       edges {
         node {
           fields {
@@ -47,3 +49,12 @@ export const query = graphql`
     }
   }
 `
+
+//Image search
+// featuredImage {
+//   childImageSharp {
+//     fluid(maxWidth: 600) {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
+// }

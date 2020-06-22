@@ -58,7 +58,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "Screenshot_triplet_checker.png" }) {
+    file(relativePath: { eq: "facebook_profile_pic.jpg" }) {
       childImageSharp {
         fixed(width: 300, height: 300) {
           ...GatsbyImageSharpFixed

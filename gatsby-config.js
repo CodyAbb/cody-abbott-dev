@@ -15,7 +15,11 @@ module.exports = {
     // used for images and article markdown folder
     {
       resolve: `gatsby-source-filesystem`,
-      options: { path: `${__dirname}/src/project_posts` },
+      options: { path: `${__dirname}/src/project_posts`, name: "projects" },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { path: `${__dirname}/src/blog_posts`, name: "posts" },
     },
     {
       resolve: `gatsby-source-filesystem`,

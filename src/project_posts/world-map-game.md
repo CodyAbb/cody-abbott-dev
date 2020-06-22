@@ -1,6 +1,7 @@
 ---
 title: "World Map Game"
 date: "2020-06-17"
+posttype: "project"
 lang: "Javascript"
 featuredImage: ../img/world_game_thumbnail.png
 ---

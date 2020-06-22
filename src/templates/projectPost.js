@@ -4,7 +4,7 @@ import ContentContainer from "../components/contentcontainer"
 import { graphql, Link } from "gatsby"
 import style from "./blog_post.module.css"
 
-export default function BlogPost({ data }) {
+export default function ProjectPost({ data }) {
   const post = data.markdownRemark
   return (
     <Navbar>
@@ -16,15 +16,15 @@ export default function BlogPost({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <div>
-            <Link to="/posts/">&#8592; Back</Link>
+            <Link to="/projects/">&#8592; Back</Link>
           </div>
         </article>
       </ContentContainer>
     </Navbar>
   )
 }
-export const bloguery = graphql`
-  query BlogPostBySlug($slug: String!) {
+export const projectQuery = graphql`
+  query ProjectPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

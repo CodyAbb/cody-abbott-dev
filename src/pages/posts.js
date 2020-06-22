@@ -3,7 +3,7 @@ import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import style from "./posts.module.css"
 
-export default function Posts() {
+export default function Posts({ data }) {
   return (
     <Navbar>
       <ContentContainer>
@@ -16,3 +16,30 @@ export default function Posts() {
     </Navbar>
   )
 }
+
+// export const query = graphql`
+//   {
+//     allMarkdownRemark(
+//       filter: { fileAbsolutePath: { regex: "/blog_posts/.*\\\\.md$/" } }
+//     ) {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             date(formatString: "DD MMMM, YYYY")
+//             title
+//             featuredImage {
+//               childImageSharp {
+//                 fluid(maxWidth: 600) {
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

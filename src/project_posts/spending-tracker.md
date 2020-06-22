@@ -1,6 +1,7 @@
 ---
 title: "Spending Tracker"
 date: "2020-06-15"
+posttype: "project"
 lang: "Ruby"
 featuredImage: ../img/spending_tracker_thumbnail.png
 ---
