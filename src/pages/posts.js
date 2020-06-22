@@ -11,7 +11,7 @@ export default function Posts({ data }) {
       <ContentContainer>
         <div className={style.container}>
           <heading>
-            <h2 className={style.title}>Content Incoming...</h2>
+            <h2 className={style.title}>Blog Posts/Tutorials</h2>
           </heading>
           <main>
             {data.allMarkdownRemark.edges.map(({ node }) => (
