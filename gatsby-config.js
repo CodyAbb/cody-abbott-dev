@@ -9,6 +9,8 @@ module.exports = {
   plugins: [
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    // used for generating SEO component
+    "gatsby-plugin-react-helmet",
     // Transforms markdown files
     "gatsby-transformer-remark",
     //Plugin allows access to files stored in data
@@ -51,7 +53,7 @@ module.exports = {
   ],
   // Site meta-data
   siteMetadata: {
-    title: "My Site",
+    title: "CodyAbbottDev",
     description: "Web development portfolio and tutorial site",
     author: "Cody Abbott",
     siteUrl: "https://cody-abbott-dev.herokuapp.com/",

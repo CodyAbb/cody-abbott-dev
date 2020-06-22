@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/seo"
 import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import { graphql, Link } from "gatsby"
@@ -9,6 +10,7 @@ export default function ProjectPost({ data }) {
   return (
     <Navbar>
       <ContentContainer>
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <article>
           <h1 className={style.title}>{post.frontmatter.title}</h1>
           <div

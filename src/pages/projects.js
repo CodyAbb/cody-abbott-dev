@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/seo"
 import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import { graphql } from "gatsby"
@@ -9,6 +10,7 @@ export default function Projects({ data }) {
   return (
     <Navbar>
       <ContentContainer>
+        <SEO title="Posts-CodyAbbottDev" description="List of Projects" />
         <main className={style.container}>
           <h2 className={style.title}>Projects: CodeClan and beyond...</h2>
           <div className={style.cardgrid}>

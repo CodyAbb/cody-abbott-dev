@@ -4,11 +4,16 @@ import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import style from "./posts.module.css"
 import PostCard from "../components/postCard"
+import SEO from "../components/seo"
 
 export default function Posts({ data }) {
   return (
     <Navbar>
       <ContentContainer>
+        <SEO
+          title="Posts-CodyAbbottDev"
+          description="List of Posts and Tutorials"
+        />
         <div className={style.container}>
           <heading>
             <h2 className={style.title}>Blog Posts/Tutorials</h2>

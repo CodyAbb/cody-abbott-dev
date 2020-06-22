@@ -4,12 +4,14 @@ import ContentContainer from "../components/contentcontainer"
 import styles from "./index.module.css"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
   return (
     <>
       <Navbar>
         <ContentContainer>
+          <SEO title="CodyAbbottDev" description="Home page" />
           <header className={styles.banner}>
             <h1 className={styles.herotext}>Hello World!</h1>
             <Img

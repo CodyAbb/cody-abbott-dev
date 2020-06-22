@@ -3,12 +3,14 @@ import Navbar from "../components/navbar"
 import ContentContainer from "../components/contentcontainer"
 import { graphql, Link } from "gatsby"
 import style from "./blog_post.module.css"
+import SEO from "../components/seo"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
     <Navbar>
       <ContentContainer>
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <article>
           <h1 className={style.title}>{post.frontmatter.title}</h1>
           <div
