@@ -15,6 +15,7 @@ export default function BlogPost({ data }) {
             className={style.blogtext}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+          <p>Posted {post.frontmatter.date}</p>
           <div>
             <Link to="/posts/">&#8592; Back</Link>
           </div>
@@ -29,6 +30,7 @@ export const bloguery = graphql`
       html
       frontmatter {
         title
+        date(fromNow: true)
       }
     }
   }
