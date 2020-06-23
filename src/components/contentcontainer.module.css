@@ -1,3 +1,9 @@
 .contentcontainer {
   margin-left: 25%;
 }
+
+@media screen and (max-width: 700px) {
+  .contentcontainer {
+    margin: 1em 0em 0em 1em;
+  }
+}

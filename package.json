@@ -30,7 +30,8 @@
     "react-icons": "^3.10.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19"
+    "typography-theme-fairy-gates": "^0.16.19",
+    "use-media": "^1.4.0"
   },
   "devDependencies": {
     "babel-jest": "^26.0.1",
