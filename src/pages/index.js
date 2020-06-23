@@ -43,8 +43,13 @@ export default function Home({ data }) {
               said "thank christ" when I've googled something and seen a Medium
               article so in my eyes it is always good to give back. In fact I've
               made the{" "}
-              <a href="https://github.com/CodyAbb/cody-abbott-dev">repo</a> I
-              created this site with public so you can explore my thought
+              <a
+                href="https://github.com/CodyAbb/cody-abbott-dev"
+                className={styles.highlightlink}
+              >
+                repo
+              </a>{" "}
+              I created this site with public so you can explore my thought
               process.
             </p>
             <p>

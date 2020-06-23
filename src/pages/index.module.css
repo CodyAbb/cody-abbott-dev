@@ -3,6 +3,8 @@
   background-color: #a3d9ff;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-content: space-around;
   align-items: center;
   justify-items: center;
   margin: 0em 0.8em 0em 0.8em;
@@ -18,6 +20,15 @@
   align-self: center;
 }
 
+.highlightlink {
+  /* margin: 3em 1em 1em 1em; */
+  padding: 0.2em;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: #a3d9ff;
+}
+
 article {
   padding: 2em 4em 1em 4em;
 }
@@ -25,4 +36,23 @@ article {
 article > p {
   font-size: 1.2em;
   line-height: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .herotext {
+    padding: 1em 0em 0.5em 0.5em;
+  }
+
+  .heroimage {
+    margin-top: 0em;
+    margin-bottom: 2em;
+  }
 }
