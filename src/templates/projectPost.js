@@ -18,7 +18,9 @@ export default function ProjectPost({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <div>
-            <Link to="/projects/">&#8592; Back</Link>
+            <Link to="/projects/" className={style.backlink}>
+              &#8592; Back
+            </Link>
           </div>
         </article>
       </ContentContainer>

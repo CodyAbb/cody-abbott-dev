@@ -1,5 +1,14 @@
 article {
-  padding: 2em 4em 1em 4em;
+  padding: 1.5em 2em 3em 2em;
+}
+
+.backlink {
+  margin: 3em 1em 1em 1em;
+  padding: 1em;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: #a3d9ff;
 }
 
 .blogtext {
@@ -8,7 +17,7 @@ article {
 }
 
 .title {
-  width: 50%;
+  width: 90%;
   margin: 1em;
   padding: 1.5em;
   background-color: #a3d9ff;

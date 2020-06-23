@@ -19,7 +19,9 @@ export default function BlogPost({ data }) {
           />
           <p>Posted {post.frontmatter.date}</p>
           <div>
-            <Link to="/posts/">&#8592; Back</Link>
+            <Link to="/posts/" className={style.backlink}>
+              &#8592; Back
+            </Link>
           </div>
         </article>
       </ContentContainer>
