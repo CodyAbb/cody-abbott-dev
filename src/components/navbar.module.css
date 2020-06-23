@@ -63,7 +63,7 @@
   padding-right: 1em;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .verticalnav {
     width: 100%;
     height: auto;

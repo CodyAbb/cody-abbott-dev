@@ -43,3 +43,23 @@
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 1em 0em 1em 0em;
+  }
+
+  .title {
+    width: 90%;
+    margin-top: 0em;
+  }
+
+  .cardgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin: 2em 0em 1em 0em;
+    width: 100%;
+  }
+}
