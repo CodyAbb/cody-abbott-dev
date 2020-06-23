@@ -37,3 +37,27 @@
   text-decoration: none;
   list-style: none;
 }
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 1em 0em 1em 0em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .title {
+    width: 80%;
+    margin-top: 0em;
+  }
+
+  .card {
+    /* margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 2em;
+    margin-bottom: 2em; */
+    margin: 2em 0em 1em 0em;
+    padding: 1em;
+    width: 100%;
+  }
+}

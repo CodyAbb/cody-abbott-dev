@@ -1,5 +1,5 @@
 article {
-  padding: 1.5em 2em 3em 2em;
+  padding: 2em 3em 3em 3em;
 }
 
 .backlink {
@@ -17,8 +17,22 @@ article {
 }
 
 .title {
-  width: 90%;
+  width: 50%;
   margin: 1em;
   padding: 1.5em;
   background-color: #a3d9ff;
+}
+
+@media screen and (max-width: 700px) {
+  article {
+    padding: 1.5em 2em 3em 2em;
+  }
+
+  .title {
+    width: 90%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    background-color: #a3d9ff;
+  }
 }
