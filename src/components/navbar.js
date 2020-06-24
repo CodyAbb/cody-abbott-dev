@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { IconContext } from "react-icons"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
+import useMedia from "use-media"
 import Img from "gatsby-image"
 import style from "./navbar.module.css"
 
@@ -48,7 +49,19 @@ export const PureNavbar = ({ data, children }) => (
   </>
 )
 
+export const MobileNavBar = ({ data, children }) => (
+  <>
+    <nav>
+      <Link to="/" className={style.avatarcard}>
+        <p className={style.avatartext}>Cody Abbott - Software Developer</p>
+      </Link>
+    </nav>
+    {children}
+  </>
+)
+
 const Navbar = ({ props, children }) => {
+  const isWide = useMedia({ minWidth: 900 })
   const data = useStaticQuery(
     graphql`
       query {
@@ -63,7 +76,11 @@ const Navbar = ({ props, children }) => {
     `
   )
 
-  return <PureNavbar {...props} children={children} data={data}></PureNavbar>
+  return isWide ? (
+    <PureNavbar {...props} children={children} data={data}></PureNavbar>
+  ) : (
+    <MobileNavBar {...props} children={children} data={data}></MobileNavBar>
+  )
 }
 
 export default Navbar
