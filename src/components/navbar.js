@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { IconContext } from "react-icons"
-import { FaLinkedin, FaGithub } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaBars } from "react-icons/fa"
 import useMedia from "use-media"
 import Img from "gatsby-image"
 import style from "./navbar.module.css"
@@ -15,7 +15,7 @@ export const PureNavbar = ({ data, children }) => (
       <Link to="/" className={style.avatarcard}>
         <Img
           className={style.avatar}
-          fixed={data.file.childImageSharp.fixed}
+          fixed={data.image1.childImageSharp.fixed}
           alt="A picture of my mug on holiday"
         />
         <p className={style.avatartext}>
@@ -49,12 +49,32 @@ export const PureNavbar = ({ data, children }) => (
   </>
 )
 
-export const MobileNavBar = ({ data, children }) => (
+export const MobileNavBar = ({
+  data,
+  children,
+  handleMenuClick,
+  hiddenLinks,
+}) => (
   <>
-    <nav>
-      <Link to="/" className={style.avatarcard}>
+    <nav className={style.mobilenav}>
+      <button onClick={() => handleMenuClick()}>
+        <FaBars />
+      </button>
+
+      <Link to="/">
         <p className={style.avatartext}>Cody Abbott - Software Developer</p>
       </Link>
+      <div style={{ display: hiddenLinks }}>
+        <Link to="/" className={style.mobilenavlink}>
+          <p>Home</p>
+        </Link>
+        <Link to="/posts/" className={style.mobilenavlink}>
+          <p>Posts/Tutorials</p>
+        </Link>
+        <Link to="/projects/" className={style.mobilenavlink}>
+          <p>Projects</p>
+        </Link>
+      </div>
     </nav>
     {children}
   </>
@@ -62,12 +82,20 @@ export const MobileNavBar = ({ data, children }) => (
 
 const Navbar = ({ props, children }) => {
   const isWide = useMedia({ minWidth: 900 })
+  const [hiddenLinks, setHiddenLinks] = useState("none")
   const data = useStaticQuery(
     graphql`
       query {
-        file(relativePath: { eq: "facebook_profile_pic.jpg" }) {
+        image1: file(relativePath: { eq: "facebook_profile_pic.jpg" }) {
           childImageSharp {
             fixed(width: 125, height: 125) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        image2: file(relativePath: { eq: "icons8-menu-24.png" }) {
+          childImageSharp {
+            fixed(width: 24, height: 24) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -76,10 +104,25 @@ const Navbar = ({ props, children }) => {
     `
   )
 
+  const handleMenuClick = () => {
+    if (hiddenLinks === "block") {
+      setHiddenLinks("none")
+    } else {
+      setHiddenLinks("block")
+    }
+  }
+
   return isWide ? (
     <PureNavbar {...props} children={children} data={data}></PureNavbar>
   ) : (
-    <MobileNavBar {...props} children={children} data={data}></MobileNavBar>
+    <MobileNavBar
+      {...props}
+      children={children}
+      data={data}
+      handleMenuClick={handleMenuClick}
+      hiddenLinks={hiddenLinks}
+      setHiddenLinks={setHiddenLinks}
+    ></MobileNavBar>
   )
 }
 

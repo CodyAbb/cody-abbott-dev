@@ -1,3 +1,7 @@
+html {
+  margin: 0em;
+}
+
 .verticalnav {
   list-style-type: none;
   margin: 0;
@@ -63,14 +67,13 @@
   padding-right: 1em;
 }
 
-@media screen and (max-width: 900px) {
-  .verticalnav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .navlink {
-    float: left;
-  }
+/* Mobile */
+/* Style the navigation menu */
+.mobilenav {
+  width: 100%;
+  padding: 0em;
+  margin-top: 0em;
+  overflow: hidden;
+  background-color: #f3de8a;
+  position: relative;
 }
