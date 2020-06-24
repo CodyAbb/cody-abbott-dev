@@ -57,13 +57,18 @@ export const MobileNavBar = ({
 }) => (
   <>
     <nav className={style.mobilenav}>
-      <button onClick={() => handleMenuClick()}>
-        <FaBars />
-      </button>
+      <div className={style.mobileheader}>
+        <button
+          onClick={() => handleMenuClick()}
+          className={style.buttonstyling}
+        >
+          <FaBars />
+        </button>
 
-      <Link to="/">
-        <p className={style.avatartext}>Cody Abbott - Software Developer</p>
-      </Link>
+        <Link to="/" className={style.mobiletitle}>
+          <p>Cody Abbott - Software Developer</p>
+        </Link>
+      </div>
       <div style={{ display: hiddenLinks }}>
         <Link to="/" className={style.mobilenavlink}>
           <p>Home</p>
@@ -74,6 +79,20 @@ export const MobileNavBar = ({
         <Link to="/projects/" className={style.mobilenavlink}>
           <p>Projects</p>
         </Link>
+        <div className={style.socialiconsmobile}>
+          <IconContext.Provider value={{ color: "black", size: "2em" }}>
+            <a
+              className={style.linkedin}
+              href="https://www.linkedin.com/in/cody-abbott/"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a classname={style.github} href="https://github.com/CodyAbb">
+              <FaGithub />
+            </a>
+          </IconContext.Provider>
+        </div>
       </div>
     </nav>
     {children}
