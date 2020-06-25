@@ -56,7 +56,7 @@ module.exports = {
     title: "CodyAbbottDev",
     description: "Web development portfolio and tutorial site",
     author: "Cody Abbott",
-    siteUrl: "https://cody-abbott-dev.herokuapp.com/",
+    siteUrl: "https://www.codyabbottdev.co.uk",
     social: [
       {
         name: "github",
