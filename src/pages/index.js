@@ -24,7 +24,10 @@ export default function Home({ data }) {
             <p>
               I am recent career changer who has moved into software
               development. I completed CodeClan's professional software
-              development course and graduated just as lockdown began.
+              development course and graduated just as lockdown began (great
+              timing I know!). But you have to try and look at the positives and
+              I've been able to use the time to enhance my knowledge and get
+              some practise.
             </p>
             <p>
               I've got a few ideas for this site. I'll use it is as a showcase
@@ -32,17 +35,18 @@ export default function Home({ data }) {
               It's also been some great practise with new technologies that I
               haven't had the chance to use. I've worked with React a few times
               however I have never used Gatsby before and so far I am really
-              enjoying it. I am also using CircleCi to build and deploy to
-              Heroku when I <i>git push origin master</i> (bliss).
+              enjoying it. I have began implementing some testing with Jest and
+              am looking to CircleCi to integrate this before pushing to
+              Netlify.
             </p>
             <p>
               Mainly I want to work on adding some tutorials for concepts and
               technologies I struggled grasping at first. I will try and convey
               them from my junior point of view, hoping this will help others
               just starting out. I've watched my fair share of tutorials and
-              said "thank christ" when I've googled something and seen a Medium
-              article so in my eyes it is always good to give back. In fact I've
-              made the{" "}
+              sighed "thank christ" when I've googled something and seen a
+              Medium article at the top. So in my eyes it is always good to pass
+              knowledge on. In fact I've made the{" "}
               <a
                 href="https://github.com/CodyAbb/cody-abbott-dev"
                 className={styles.highlightlink}
