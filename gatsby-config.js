@@ -12,7 +12,20 @@ module.exports = {
     // used for generating SEO component
     "gatsby-plugin-react-helmet",
     // Transforms markdown files
-    "gatsby-transformer-remark",
+    // with extra plugin for inline markdown images
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
     //Plugin allows access to files stored in data
     // used for images and article markdown folder
     {
