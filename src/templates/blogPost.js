@@ -17,6 +17,7 @@ export default function BlogPost({ data }) {
             className={style.blogtext}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+          <br />
           <p>Posted {post.frontmatter.date}</p>
           <div>
             <Link to="/posts/" className={style.backlink}>
@@ -28,7 +29,7 @@ export default function BlogPost({ data }) {
     </Navbar>
   )
 }
-export const bloguery = graphql`
+export const blogQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html

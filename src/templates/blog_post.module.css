@@ -2,6 +2,18 @@ article {
   padding: 2em 3em 3em 3em;
 }
 
+.codeblock {
+  background-color: black;
+}
+
+article a {
+  padding: 0.3em;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: #a3d9ff;
+}
+
 .backlink {
   margin: 3em 1em 1em 1em;
   padding: 1em;
@@ -29,7 +41,7 @@ article {
   }
 
   .title {
-    width: 90%;
+    width: 95%;
     margin-top: 0.5em;
     margin-bottom: 1em;
     padding: 1.5em;
