@@ -6,6 +6,8 @@ lang: "Ruby"
 featuredImage: ../img/spending_tracker_thumbnail.png
 ---
 
+###[Repository](https://github.com/CodyAbb/world_quiz_group_project)
+
 This was the first project I created at CodeClan. Built in Ruby, it uses Sinatra and Postgres Database to allow a user to track expenses from retailers they add. It is fully CRUD (allowing users to add, edit and delete their expenses) and follows RESTful routes.
 
 Being a beginning project it is very manual by design. It follows MVC architecture with Sinatra handling the routing. Every route takes care of a specific database interaction, linking to a native SQL query (don't worry, it does account for SQL injections). In terms of front-end, it relies on ERB files for handling the dynamic content, no Rails here.
